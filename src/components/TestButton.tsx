@@ -31,7 +31,7 @@ function TestButton() : JSX.Element {
 
 
 
-//---------------------------------------------------------------------EXAMPLE C Single line arrow function-----------------------------------------------------------------------------------------------*/
+//---------------------------------------------------------------------EXAMPLE C Single line arrow function-----------------------------------------------------------------------------------------------
 
 function TestButton() : JSX.Element {
   return (
@@ -44,5 +44,20 @@ function TestButton() : JSX.Element {
 
 export default TestButton;
 
-//---------------------------------------------------------------------EXAMPLE F Single line anonymous arrow function-----------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------EXAMPLE F Single line anonymous arrow function-----------------------------------------------------------------------------------------------*/
 
+function TestButton() : JSX.Element {
+  const URL = "https://www.youtube.com/"
+  return (
+    <button onClick={()=> {
+      console.log("anonymous function LETS GOOO!!!!")
+      window.alert("Thins are happening!!!!")
+      window.open(URL, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')
+      }}>
+      This is the test button again! but this time it is anonymous
+    </button>
+  )
+}
+
+
+export default TestButton;
